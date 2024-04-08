@@ -20,7 +20,7 @@ This project is a Cinema Reservation System built to help users reserve seats fo
 
 ## Technologies Used
 
-### Frontend
+### Frontend (Section 1)
 
 - HTML
 - CSS
@@ -28,7 +28,7 @@ This project is a Cinema Reservation System built to help users reserve seats fo
 - jQuery
 - Bootstrap
 
-### Backend
+### Backend (Section 2)
 
 - PHP
 - MySQL
@@ -37,8 +37,8 @@ This project is a Cinema Reservation System built to help users reserve seats fo
 
 1. Clone the repository: `git clone https://github.com/yourusername/cinema-reservation-system.git`
 2. Navigate to the project directory: `cd cinema-reservation-system`
-3. Install frontend dependencies: `npm install` or `yarn install`
-4. Start the frontend server: `npm start` or `yarn start`
+3. Install frontend dependencies: `npm install`
+4. Start the frontend server: `npm start`
 5. Set up the backend server with PHP and MySQL.
 
 ## Usage
