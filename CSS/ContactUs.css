@@ -1,0 +1,43 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper div {
+	margin: auto;
+}
+
+#title {
+	margin: auto;
+	font-size: 40px;
+}
+
+form label {
+	padding-right: 10px;
+}
+
+.contactFormContainer {
+	max-width: 300px;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+
+.contactForm input {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#messageTextBox {
+	height: 100px;
+}
+
+#contactFormSubmit {
+	max-width: 80px;
+	font-size: 18px;
+}
