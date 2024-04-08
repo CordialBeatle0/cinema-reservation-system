@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   overflow-y: scroll;
   background: #d0ffc9;
-  background-image: url(./../Pictures/Background2.jpg);
+  background-image: url(./../images/Background2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -91,7 +91,7 @@ header nav .logo {
   font-size: 1.5em;
   width: 150px;
   height: 90px;
-  background-image: url(./../Pictures/Studio_Ghiblinet_Logo-removebg-preview.png);
+  background-image: url(./../images/Studio_Ghiblinet_Logo-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
