@@ -11,18 +11,24 @@
 			<div class="contact form">
 				<header>Contact Us</header>
 				<p id="thankYouMessage">
-					Thank you for using our Website. If you have any questions or require support then please contact us using the
+					Thank you for using our website. If you have any questions or require support then please contact us using the
 					form bellow.
 				</p>
 				<form action="">
-					<input type="text" placeholder="Enter your name" />
-					<input type="text" placeholder="Enter your email" />
-					<textarea id="message" cols="60" rows="10" placeholder="Enter your message"></textarea>
+					<div>
+						<input type="text" placeholder="Enter your name" id="name" required />
+					</div>
+					<div>
+						<input type="text" placeholder="Enter your email" id="email" required />
+					</div>
+					<div>
+						<textarea cols="60" rows="10" placeholder="Enter your message" id="message" required></textarea>
+					</div>
 					<input type="submit" class="button" value="Submit" />
 				</form>
 			</div>
 		</div>
 
-		<!-- <script src="./../validations/contact.js"></script> -->
+		<script src="./../validations/contact.js"></script>
 	</body>
 </html>

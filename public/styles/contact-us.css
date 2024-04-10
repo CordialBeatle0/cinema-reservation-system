@@ -39,10 +39,13 @@ textarea {
 	width: 100%;
 	padding: 0 15px;
 	font-size: 17px;
-	margin-bottom: 1.3rem;
 	border: 1px solid #ddd;
 	border-radius: 6px;
 	outline: none;
+}
+.form div {
+	margin-bottom: 1.3rem;
+	padding: 0 15px;
 }
 .form input:focus,
 textarea:focus {
@@ -69,7 +72,12 @@ textarea:focus {
 .form input.button:hover {
 	background: #006653;
 }
+.form span {
+}
 #message {
 	height: 100px;
+	min-height: 100px;
+	max-height: 200px;
 	align-content: center;
+	resize: vertical;
 }
