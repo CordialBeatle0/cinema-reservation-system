@@ -35,10 +35,11 @@
         <h3 class="headers">Movies</h3>
         <div class="movie-card-section">
             <div class="card">
-                <img src="./../images/upFromThePoppyHill.jpg" />
-
+                <img id="myDiv" src="./../images/upFromThePoppyHill.jpg" />
+                <!-- <p id="tooltip-text">MOVIE DETAILS</p> -->
                 <div class="card-content">
                     <p class="movie-name">Up From The Poppy Hill (2011)</p>
+
                 </div>
             </div>
             <div class="card">
@@ -49,24 +50,29 @@
                 </div>
             </div>
             <div class="card">
-                <img src="Pictures/YourName.jpg" />
+                <img src="./../images/YourName.jpg" />
 
                 <div class="card-content">
-                    <p class="movie-name">Movie name</p>
+                    <p class="movie-name">Your Name</p>
                 </div>
             </div>
+            <div class="card">
+                <img src="./../images/castleInTheSky.jpg" />
 
-        </div>
+                <div class="card-content">
+                    <p class="movie-name">Castle In The Sky</p>
+                </div>
+            </div>
         </div>
         <!---movie-card--->
 
         <div class="show">
-            <div class="show-bar">
-                <div class="bar"></div>
-            </div>
-            <button>Show more</button>
+            <div class="show-bar"></div>
+            <a href="./../views/AddMovieForm.html"><button class="addmovie">Add Movie</button></a>
         </div>
     </section>
+
+    <script src="./../js/AdminMovieDashboard.js"></script>
 </body>
 
 </html>
