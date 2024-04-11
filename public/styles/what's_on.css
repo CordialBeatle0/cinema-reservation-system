@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
+  min-width: 700px;
 }
 
 header {
@@ -55,27 +56,6 @@ header nav {
   left: 0;
   z-index: 99;
   width: 80%;
-}
-
-header nav .fa {
-  cursor: pointer;
-  display: none;
-}
-
-header nav .fa:hover {
-  color: white;
-}
-
-.nav {
-  background: #fff;
-  color: #000;
-  transition: background 0.5s;
-}
-
-.navBlack {
-  background: #000;
-  color: #fff;
-  transition: background 0.5s;
 }
 
 header nav .logo {
@@ -127,17 +107,19 @@ header nav ul li span {
   align-items: center;
 }
 
-header nav ul li img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 header a {
   text-decoration: none;
   color: white;
   font-size: inherit;
+}
+
+header nav .fa {
+  cursor: pointer;
+  display: none;
+}
+
+header nav .fa:hover {
+  color: white;
 }
 
 #currentPage {
@@ -162,6 +144,7 @@ header a {
 
 section {
   margin-top: 10%;
+  min-width: 50px;
 }
 
 section .movie-card-section {
