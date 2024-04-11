@@ -15,8 +15,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("../header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
-  <body>
+  <body style="margin-top: 126px">
+    <div id="header"></div>
     <div class="tabs">
       <div class="tab active" data-tab="purchases">Purchases</div>
       <div class="tab" data-tab="manage">Manage Details & Payment</div>
