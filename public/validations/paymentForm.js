@@ -112,6 +112,7 @@ const handleFormData = (e) => {
 
   // Submitting the form
   form.submit();
+  alert("Payment Successfull!");
 };
 
 // Handling form submission event

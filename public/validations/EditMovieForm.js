@@ -69,7 +69,7 @@ const handleFormData = (e) => {
 
   // Submitting the form
   form.submit();
-  alert("Movie Added Successfully!");
+  alert("Movie Details Edited Successfully!");
 };
 
 // Handling form submission event
