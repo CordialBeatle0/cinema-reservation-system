@@ -1,0 +1,85 @@
+/*-----css movie site -----*/
+@font-face {
+	font-family: "Ghibli";
+	src: url(./../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf);
+}
+body {
+	margin: 0px;
+	border: 0px;
+	background: #0081ac;
+	font-family: "Ghibli";
+}
+#main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+#main-container a {
+	align-self: center;
+}
+#screen {
+	align-content: center;
+	height: 20px;
+	width: 700px;
+	border: 1px solid white;
+	text-align: center;
+	align-self: center;
+	color: white;
+	background: rgb(0, 0, 0);
+}
+#seats-container {
+	height: 500px;
+	width: 700px;
+	border: 2px solid #aaa;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+	margin-top: 20px;
+	align-self: center;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.seats {
+	height: 35px;
+	width: 35px;
+	border: 1px solid white;
+	border-radius: 2px 5px 0px 5px;
+	margin-bottom: 50px;
+	background-color: black;
+	transition: background 0.3s;
+}
+.seats:hover {
+	border: 1px solid rgb(93, 93, 93);
+	box-shadow: 2px 2px 2px white, 2px -2px 2px white, -2px 2px 2px white, -2px -2px 2px white;
+	background: #aaa;
+}
+.seats.selected {
+	background-color: #00a52c;
+	border: 1px solid #008d26;
+	box-shadow: 2px 2px 2px #008d26, 2px -2px 2px #008d26, -2px 2px 2px #008d26, -2px -2px 2px #008d26;
+}
+#row0,
+#row1,
+#row2,
+#row3,
+#row4,
+#row5 {
+	display: flex;
+	justify-content: space-between;
+}
+#book {
+	font-family: "Ghibli";
+	margin-top: 30px;
+	height: 50px;
+	width: 200px;
+	font-size: 20px;
+	color: white;
+	background-color: #33b0de;
+	border: none;
+	border-radius: 5%;
+	transition: color 0.3s, background 0.3s;
+}
+#book:hover {
+	color: white;
+	background: #146fef;
+}
