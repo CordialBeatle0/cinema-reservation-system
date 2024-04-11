@@ -73,18 +73,6 @@ header nav .fa:hover {
   color: white;
 }
 
-.nav {
-  background: #fff;
-  color: #000;
-  transition: background 0.5s;
-}
-
-.navBlack {
-  background: #000;
-  color: #fff;
-  transition: background 0.5s;
-}
-
 header nav .logo {
   top: 0;
   font-weight: 500;
