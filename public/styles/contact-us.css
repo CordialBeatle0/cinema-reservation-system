@@ -18,7 +18,7 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: 430px;
+	max-width: 500px;
 	width: 100%;
 	background: #fff;
 	border-radius: 7px;
@@ -27,7 +27,7 @@ body {
 .container .form {
 	padding: 2rem;
 }
-.form header {
+.form h1 {
 	font-size: 2rem;
 	font-weight: 500;
 	text-align: center;
@@ -46,6 +46,7 @@ textarea {
 .form div {
 	margin-bottom: 1.3rem;
 	padding: 0 15px;
+	height: auto;
 }
 .form input:focus,
 textarea:focus {
@@ -72,12 +73,14 @@ textarea:focus {
 .form input.button:hover {
 	background: #006653;
 }
-.form span {
-}
 #message {
 	height: 100px;
 	min-height: 100px;
 	max-height: 200px;
 	align-content: center;
 	resize: vertical;
+}
+#errorMessage {
+	padding: 0 15px;
+	color: red;
 }
