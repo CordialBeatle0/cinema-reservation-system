@@ -29,6 +29,7 @@ $(document).ready(function () {
       $(this).css("background", " #33b0de");
       $(this).css("text-decoration", "none");
       $(this).css("box-shadow", "inset 0 0 50px #146fef");
+      // amir hna
     }
   );
 });
