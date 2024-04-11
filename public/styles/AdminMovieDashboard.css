@@ -243,7 +243,7 @@ section .show .show-bar {
 .editmovie {
   border: none;
   outline: none;
-  width: 100px;
+  width: 80px;
   padding: 15px 0;
   font-size: 15px;
   border-radius: 50px;
