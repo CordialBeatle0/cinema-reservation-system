@@ -25,25 +25,71 @@
         <i class="fa fa-bars" id="menu"></i>
 
         <ul>
-          <li>Home</li>
-          <li id="currentPage">Movies</li>
-          <li>Tickets</li>
-          <li>offers</li>
-          <li>contact us</li>
+          <li><a href="">Home</a></li>
+          <li id="currentPage"><a href="./what's_on.html">Movies</a></li>
+          <li><a href="">Tickets</a></li>
+          <li><a href="">offers</a></li>
+          <li><a href="">contact us</a></li>
           <li><b>sign out</b></li>
         </ul>
       </nav>
     </header>
-    <!-- <div class="home_slideshow"></div>  -->
+    <!-- <div class="home_slideshow"></div> -->
     <section>
       <h3 class="headers">WHAT'S ON</h3>
       <div class="movie-card-section">
         <div class="card">
-          <img id="myDiv" src="./../images/upFromThePoppyHill.jpg" />
-          <!-- <p id="tooltip-text">MOVIE DETAILS</p> -->
+          <a href="upFromThePoppyHill.html">
+            <img id="myDiv" src="./../images/upFromThePoppyHill.jpg" />
+          </a>
           <div class="card-content">
-            <p class="movie-name">Up From The Poppy Hill (2011)</p>
-            <span class="tooltip">Movie Details</span>
+            <a href="upFromThePoppyHill.html">
+              <p class="movie-name">Up From The Poppy Hill (2011)</p>
+            </a>
+            <!-- ToolTip For Movie -->
+            <span id="tooltip">
+              <div id="tooltip-content">
+                <!-- TOOLTIP IMAGE -->
+                <img src="./../images/upFromThePoppyHill.jpg" />
+                <text>Up From The Poppy Hill</text><br />
+                <!-- TOOLTIP RATING -->
+                <span id="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <text>4.8</text>
+                </span>
+                <!-- TOOLTIP GENRE -->
+                <div id="genre-box">
+                  <text>Melodrama</text>
+                  <text>Romance</text>
+                  <text>Coming-of-age</text>
+                </div>
+                <!-- TOOLTIP TICKETS AND SHOW TIMES -->
+                <div id="tickets">
+                  <span class="fa-stack">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                    <strong class="fa-stack-1x ticket-text">09:00</strong>
+                  </span>
+                  <span class="fa-stack">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                    <strong class="fa-stack-1x ticket-text">12:00</strong>
+                  </span>
+                  <span class="fa-stack">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                    <strong class="fa-stack-1x ticket-text">15:00</strong>
+                  </span>
+                </div>
+                <!-- TOOLTIP MOVIE DESCRIPTION -->
+                <p>
+                  Two high schoolers find hope as they fight to save an old
+                  wartime era clubhouse from destruction during the preparations
+                  for the 1964 Tokyo Olympics.
+                </p>
+              </div>
+            </span>
           </div>
         </div>
         <div class="card">

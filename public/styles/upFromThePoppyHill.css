@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "Ghibli";
+  src: url(./../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-image: url(./../images/Background2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  padding-top: 80px;
+  height: 17%;
+  z-index: 2;
+  /* background-color: #468657	; */
+  background-color: #33b0de;
+  top: 0;
+  font-family: "Ghibli";
+}
+
+.home_slideshow {
+  background: url("https://s3picturehouses.s3.eu-central-1.amazonaws.com/header/ph_15977496885f3bb9b84457c.jpg");
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background:rgba(0,0,0,.75);  */
+  box-shadow: inset 0 0 50px #146fef;
+}
+
+header nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  z-index: 99;
+  width: 80%;
+}
+
+header nav .fa {
+  cursor: pointer;
+  display: none;
+}
+
+header nav .fa:hover {
+  color: white;
+}
+
+.nav {
+  background: #fff;
+  color: #000;
+  transition: background 0.5s;
+}
+
+.navBlack {
+  background: #000;
+  color: #fff;
+  transition: background 0.5s;
+}
+
+header nav .logo {
+  top: 0;
+  font-weight: 500;
+  font-size: 1.5em;
+  width: 150px;
+  height: 90px;
+  background-image: url(./../images/Studio_Ghiblinet_Logo-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header nav .logo span {
+  color: white;
+}
+
+header nav ul .marker a {
+  background: white;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-radius: 20px;
+  font-family: "Ghibli";
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  list-style: none;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+
+header nav ul li span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+header nav ul li img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: inherit;
+}
+
+#currentPage {
+  text-decoration: underline white 2px;
+  text-underline-offset: 7px;
+  font-family: "Ghibli";
+}
+
+.home_slideshow {
+  position: relative;
+  background-color: #0051c3;
+  top: 110px;
+  background: url("https://wallpapers.com/images/hd/from-up-on-poppy-hill-2011-film-whtu6vwgq5odgw11.jpg");
+  /* height: 450px; */
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.9; */
+}
+
+.home_slideshow ::before {
+  background-color: #0051c3;
+}
+
+#tooltip {
+  position: absolute;
+  background: #33b0de;
+  box-shadow: inset 0 0 1000px #146fef;
+  width: 125%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+#tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #258ff9 transparent transparent;
+}
+
+#tooltip-content {
+  width: 90%;
+  margin: 10%;
+}
+
+#tooltip img {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+}
+
+#tooltip #rating .fa {
+  /* transform: scale(5); */
+  /* color: rgb(255, 228, 73); */
+  color: white;
+  position: relative;
+  top: 180px;
+  left: inherit;
+}
+
+#tooltip #rating text {
+  position: relative;
+  top: 178px;
+  left: 5px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Ghibli";
+  /* color: rgb(255, 228, 73); */
+  color: white;
+}
+
+#tooltip text {
+  position: relative;
+  top: 170px;
+  /* border-bottom: solid 2px black; */
+  font-family: "Ghibli";
+  color: white;
+}
+
+#tickets {
+  position: absolute;
+  top: 30px;
+  right: 0%;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 40%;
+  justify-content: right;
+  float: right;
+  display: grid;
+}
+
+#tickets .fa {
+  position: relative;
+  top: 12.5px;
+  right: 40px;
+  transform: scaleX(9) scaleY(4) rotateZ(45deg);
+  /* color: rgba(255, 213, 2, 0.826); */
+  color: white;
+}
+
+#tickets .ticket-text {
+  font-family: "Ghibli";
+  margin-top: 0.8em;
+  left: -50px;
+  font-size: 15px;
+  z-index: 2;
+  color: #0051c3;
+}
+
+#genre-box {
+  position: relative;
+  top: 25px;
+  margin-right: 10%;
+  font-family: "Ghibli";
+  font-size: x-small;
+  color: white;
+  display: flex;
+  align-content: space-evenly;
+  gap: 6px;
+}
+
+#genre-box text {
+  padding: 5px;
+  border: solid 1px white;
+  border-radius: 20px;
+}
+
+/* Tooltip Description */
+#tooltip p {
+  font-family: "Ghibli";
+  font-size: x-small;
+  position: relative;
+  top: 215px;
+  color: white;
+  word-spacing: 5px;
+}

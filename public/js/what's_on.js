@@ -7,10 +7,10 @@ window.onload = function () {
 };
 
 function hideTooltip() {
-  const tooltip = document.querySelector(".tooltip");
+  const tooltip = document.querySelector("#tooltip");
   tooltip.style.display = "none";
 }
 function showTooltip() {
-  const tooltip = document.querySelector(".tooltip");
+  const tooltip = document.querySelector("#tooltip");
   tooltip.style.display = "block";
 }
