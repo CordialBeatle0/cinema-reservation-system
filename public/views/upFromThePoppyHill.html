@@ -18,73 +18,78 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <p class="logo"></p>
-        &nbsp;
-        <i class="fa fa-bars" id="menu"></i>
+    <div id="page-content">
+      <div id="tooltip">
+        <div id="tooltip-content">
+          <!-- TOOLTIP IMAGE -->
+          <img src="./../images/upFromThePoppyHill.jpg" />
+          <text id="title">Up From The Poppy Hill</text><br />
+          <div id="under-title">
+            <text>2011</text>
+            <text>7+</text>
+            <text>1 h 31 m</text>
+            <text>Language: Japanese</text>
+            <hr />
+          </div>
+          <!-- TOOLTIP GENRE -->
+          <div id="genre-box">
+            <text>Melodrama</text>
+            <text>Romance</text>
+            <text>Coming-of-age</text>
+          </div>
+          <!-- TOOLTIP RATING -->
+          <span id="rating">
+            <text>4.8</text>
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
+          </span>
 
-        <ul>
-          <li><a href="">Home</a></li>
-          <li id="currentPage"><a href="./what's_on.html">Movies</a></li>
-          <li><a href="">Tickets</a></li>
-          <li><a href="">offers</a></li>
-          <li><a href="">contact us</a></li>
-          <li><b>sign out</b></li>
-        </ul>
-      </nav>
-    </header>
-
-    <span id="tooltip">
-      <div id="tooltip-content">
-        <!-- TOOLTIP IMAGE -->
-        <img src="./../images/upFromThePoppyHill.jpg" />
-        <text id="title">Up From The Poppy Hill</text><br />
-        <div id="under-title">
-          <text>2011</text>
-          <text>7+</text>
-          <text>1 h 31 m</text>
-          <text>Language: Japanese</text>
-          <hr />
+          <!-- TOOLTIP MOVIE DESCRIPTION -->
+          <h5>Director: Gorō Miyazaki</h5>
+          <p id="description">
+            The movie is based on the 1980 serialized manga of the same name
+            illustrated by Chizuru Takahashi and written by Tetsurō Sayama. Set
+            in 1963 Yokohama, Japan, the film tells the story of Umi Matsuzaki,
+            a high school girl living in her grandmother's boarding house called
+            "Coquelicot Manor". When Umi meets Shun Kazama, a member of the
+            school's newspaper club, they decide to clean up the school's
+            clubhouse, Quartier Latin. However, Tokumaru, the chairman of the
+            local high school and a businessman, intends to demolish the
+            building for redevelopment and Umi and Shun, along with Shirō
+            Mizunuma, must persuade him to reconsider.
+          </p>
         </div>
-        <!-- TOOLTIP GENRE -->
-        <div id="genre-box">
-          <text>Melodrama</text>
-          <text>Romance</text>
-          <text>Coming-of-age</text>
-        </div>
-        <!-- TOOLTIP RATING -->
-        <span id="rating">
-          <text>4.8</text>
-          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
-        </span>
-
-        <!-- TOOLTIP MOVIE DESCRIPTION -->
-        <h5>Director: Gorō Miyazaki</h5>
-        <p id="description">
-          The movie is based on the 1980 serialized manga of the same name
-          illustrated by Chizuru Takahashi and written by Tetsurō Sayama. Set in
-          1963 Yokohama, Japan, the film tells the story of Umi Matsuzaki, a
-          high school girl living in her grandmother's boarding house called
-          "Coquelicot Manor". When Umi meets Shun Kazama, a member of the
-          school's newspaper club, they decide to clean up the school's
-          clubhouse, Quartier Latin. However, Tokumaru, the chairman of the
-          local high school and a businessman, intends to demolish the building
-          for redevelopment and Umi and Shun, along with Shirō Mizunuma, must
-          persuade him to reconsider.
-        </p>
       </div>
-    </span>
-    <!-- <span class="home_slideshow">
-      <text id="title">Up from the poppy hill</text>
-      <img
-        id="poster"
-        src="https://i.pinimg.com/564x/f9/ca/02/f9ca029dd184e86dc0922d4b587ac3a9.jpg"
-      />
-    </span> -->
+      <div id="details">
+        <div id="genre">
+          <text><b>Genre:</b> Melodrama, Romance, Coming-of-age</text>
+          <text><b>Running Time:</b> 91 min</text>
+          <text><b>Release Date:</b> </text>
+          <text><b>Language:</b> Japanese</text>
+          <text><b>Subtitles:</b> English</text>
+        </div>
+        <div id="show-times">
+          <i class="fa fa-video-camera fa-2x" aria-hidden="true"> Show Times</i>
+          <i class="fa fa-ticket" aria-hidden="true">9:00 am</i>
+          <i class="fa fa-ticket" aria-hidden="true">12:00 pm</i>
+          <i class="fa fa-ticket" aria-hidden="true">15:00 pm</i>
+        </div>
+      </div>
+      <div id="trailer">
+        <!-- INSERT TRAILER HERE -->
+        <video
+          width="100%"
+          height="100%"
+          controls
+          poster="./../images/bannerUpFromThePoppyHill.jpg"
+        >
+          <source src="./../videos/OnPoppyHillOfficial.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <button>Buy Your Ticket</button>
+    </div>
   </body>
 </html>
