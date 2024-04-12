@@ -16,6 +16,7 @@ body {
 
 .tabs {
   display: flex;
+  border-bottom: solid 2px white;
 }
 
 .tab {

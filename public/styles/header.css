@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Ghibli";
+  src: url(./../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf);
+}
+
 header {
   width: 100%;
   position: fixed;

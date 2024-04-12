@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Ghibli";
+  src: url(./../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf);
+}
+
 #footer {
   background-color: #333;
   color: #fff;
@@ -6,12 +11,13 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .footer-section {
   width: 30%;
+  max-width: fit-content;
 }
 
 .footer-section h3 {

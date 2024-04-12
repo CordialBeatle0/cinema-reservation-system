@@ -1,283 +1,281 @@
 /*-----css movie site -----*/
 @font-face {
-	font-family: "Ghibli";
-	src: url(../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf);
+  font-family: "Ghibli";
+  src: url(Eyad\ Al-Samman\ -\ Ghibli.otf);
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	transition: all 0.2s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
 }
 
 body {
-	font-family: "Roboto", sans-serif;
-	overflow: hidden;
-	overflow-y: scroll;
-	background: #d0ffc9;
-	background-image: url(./../images/Background2.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #d0ffc9;
+  background-image: url(./../images/Background2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
 }
 
-header {
-	width: 100%;
-	position: fixed;
-	padding-top: 80px;
-	height: 17%;
-	/* background-color: #468657	; */
-	background-color: #33b0de;
-	top: 0;
-	font-family: "Ghibli";
+/* header {
+  width: 100%;
+  position: fixed;
+  padding-top: 80px;
+  height: 17%;
+  background-color: #33b0de;
+  top: 0;
+  font-family: "Ghibli";
 }
 
 header:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	/* background:rgba(0,0,0,.75);  */
-	box-shadow: inset 0 0 50px #146fef;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 50px #146fef;
 }
 
 header nav {
-	color: #fff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 100px;
-	position: fixed;
-	top: 5px;
-	left: 0;
-	z-index: 99;
-	width: 80%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  z-index: 99;
+  width: 80%;
 }
 
 header nav .fa {
-	cursor: pointer;
-	display: none;
+  cursor: pointer;
+  display: none;
 }
 
 header nav .fa:hover {
-	color: white;
+  color: white;
 }
 
 header nav .logo {
-	top: 0;
-	font-weight: 500;
-	font-size: 1.5em;
-	width: 150px;
-	height: 90px;
-	background-image: url(./../images/Studio_Ghiblinet_Logo-removebg-preview.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
+  top: 0;
+  font-weight: 500;
+  font-size: 1.5em;
+  width: 150px;
+  height: 90px;
+  background-image: url(./../images/Studio_Ghiblinet_Logo-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 header nav .logo span {
-	color: white;
+  color: white;
 }
 
 header nav ul .marker {
-	background: white;
-	width: 50px;
-	height: 2px;
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	border-radius: 20px;
-	font-family: "Ghibli";
+  background: white;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-radius: 20px;
+  font-family: "Ghibli";
 }
 
 header nav ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	text-transform: uppercase;
-	list-style: none;
-	position: relative;
-	margin-left: 10%;
-	margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  list-style: none;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 header nav ul li {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 header nav ul li span {
-	display: flex;
-	gap: 8px;
-	align-items: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 header nav ul li img {
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	object-fit: cover;
-}
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+} */
 
-#currentPage {
-	text-decoration: underline white 2px;
-	text-underline-offset: 7px;
-	font-family: "Ghibli";
-}
+/* #currentPage {
+  text-decoration: underline white 2px;
+  text-underline-offset: 7px;
+  font-family: "Ghibli";
+} */
 
 .headers {
-	color: #013e48;
-	font-weight: 500;
-	padding: 20px 100px;
-	/* margin-left: 10%; */
-	font-size: x-large;
-	text-decoration: underline;
-	text-underline-offset: 13px;
-	text-decoration-color: #013e48;
-	top: 25%;
-	left: 0;
-	font-family: "Ghibli";
+  color: #013e48;
+  font-weight: 500;
+  padding: 20px 100px;
+  /* margin-left: 10%; */
+  font-size: x-large;
+  text-decoration: underline;
+  text-underline-offset: 13px;
+  text-decoration-color: #013e48;
+  top: 25%;
+  left: 0;
+  font-family: "Ghibli";
 }
 
 section {
-	margin-top: 10%;
+  margin-top: 10%;
 }
 
 section .movie-card-section {
-	/* background:#f40000; */
-	padding: 20px 100px;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	gap: 50px;
-	padding-top: 50px;
-	border-radius: 10px;
+  /* background:#f40000; */
+  padding: 20px 100px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+  padding-top: 50px;
+  border-radius: 10px;
 }
 
 section .movie-card-section .card {
-	margin-bottom: 20px;
-	color: #013e48;
-	text-transform: uppercase;
-	width: 250px;
-	/* 
+  margin-bottom: 20px;
+  color: #013e48;
+  text-transform: uppercase;
+  width: 250px;
+  /* 
   -webkit-text-stroke-width: 0.3px; */
-	/* -webkit-text-stroke-color: #33b0de; */
+  /* -webkit-text-stroke-color: #33b0de; */
 }
 
 section .movie-card-section .card img {
-	width: 100%;
-	height: 350px;
-	object-fit: cover;
-	border-radius: 10px;
-	box-shadow: 0 0 30px #000;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #000;
 }
 
 section .movie-card-section .card .card-content .movie-name {
-	font-size: 18px;
-	margin-top: 10px;
-	font-family: "Ghibli";
-	text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: "Ghibli";
+  text-align: center;
 }
 
 section .movie-card-section .card .card-content .movie-info {
-	font-size: 0.95em;
-	margin-top: 10px;
+  font-size: 0.95em;
+  margin-top: 10px;
 }
 
 section .movie-card-section .card .card-content .movie-info span {
-	color: #666;
+  color: #666;
 }
 
 section .movie-card-section .card .card-content .movie-info .d3 {
-	background: #33b0de;
-	border-radius: 50%;
-	font-size: 0.5em;
-	color: #146fef;
-	padding: 3px;
-	margin-left: 3px;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: white;
+  background: #33b0de;
+  border-radius: 50%;
+  font-size: 0.5em;
+  color: #146fef;
+  padding: 3px;
+  margin-left: 3px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
 }
 
 section .show {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 20px;
-	width: 100%;
-	/* background: #111; */
-	padding: 10px 100px;
-	padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  /* background: #111; */
+  padding: 10px 100px;
+  padding-bottom: 40px;
 }
 
 section .show .show-bar {
-	background: #fff;
-	width: 100%;
-	height: 4px;
-	border-radius: 50px;
-	overflow: hidden;
+  background: #fff;
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+  overflow: hidden;
 }
 .editmovie {
-	border: none;
-	outline: none;
-	width: 80px;
-	padding: 15px 0;
-	font-size: 15px;
-	border-radius: 50px;
-	background: #33b0de;
-	color: #fff;
-	cursor: pointer;
-	box-shadow: inset 0 0 50px #146fef;
+  border: none;
+  outline: none;
+  width: 80px;
+  padding: 15px 0;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #33b0de;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: inset 0 0 50px #146fef;
 }
 .addmovie {
-	border: none;
-	outline: none;
-	width: 300px;
-	padding: 15px 0;
-	font-size: 1em;
-	border-radius: 50px;
-	background: #33b0de;
-	color: #fff;
-	cursor: pointer;
-	box-shadow: inset 0 0 50px #146fef;
+  border: none;
+  outline: none;
+  width: 300px;
+  padding: 15px 0;
+  font-size: 1em;
+  border-radius: 50px;
+  background: #33b0de;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: inset 0 0 50px #146fef;
 }
 
 /* slide show */
 #slideshow {
-	position: relative;
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
-	/* border: 1px solid #ccc; */
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
 }
 
 .slide {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Style for buttons */
 .button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: rgba(255, 255, 255, 0.5);
-	border: none;
-	/* padding: 50px; */
-	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  /* padding: 50px; */
+  cursor: pointer;
 }
 
 #prev {
-	left: 300px;
+  left: 300px;
 }
 
 #next {
-	right: 300px;
+  right: 300px;
 }
