@@ -12,54 +12,57 @@
       $(function () {
         $("#header").load("../header.html");
         $("#footer").load("../footer.html");
+        // The Button Up
+        var btn = $("#backToTop");
+        $(window).on("scroll", function () {
+          if ($(window).scrollTop() > 300) {
+            btn.addClass("show");
+          } else {
+            btn.removeClass("show");
+          }
+        });
+        btn.on("click", function (e) {
+          e.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: 0,
+            },
+            "300"
+          );
+        });
       });
     </script>
   </head>
   <body>
     <div id="header"></div>
+    <a href="javascript:void(0);" id="backToTop" class="back-to-top"> <i class="arrow"></i><i class="arrow"></i> </a>
     <div class="contentContainer">
       <div>
         <h1>Offers</h1>
         <div class="offerContainer">
-          <img
-            src="../images/RamadanOffer.jpg"
-            alt="Picture of Ramadan in relation to the offer"
-          />
+          <img src="../images/RamadanOffer.jpg" alt="Picture of Ramadan in relation to the offer" />
           <h2>Ramadan Offer</h2>
           <p>
-            Immerse yourself in the joy of Ramadan evenings with our exclusive
-            Ramadan Nights offer at our cinema. Join us as the sun sets and
-            experience cinematic magic like never before. Available every
-            evening during Ramadan, from sunset till late, indulge in our
-            special Ramadan Nights promotion. Enjoy discounts of up to 25% off
-            on tickets and snacks. Celebrate the spirit of Ramadan with us at
-            our cinema and create unforgettable memories with your loved ones.
-            See you at the movies!
+            Immerse yourself in the joy of Ramadan evenings with our exclusive Ramadan Nights offer at our cinema. Join
+            us as the sun sets and experience cinematic magic like never before. Available every evening during Ramadan,
+            from sunset till late, indulge in our special Ramadan Nights promotion. Enjoy discounts of up to 25% off on
+            tickets and snacks. Celebrate the spirit of Ramadan with us at our cinema and create unforgettable memories
+            with your loved ones. See you at the movies!
           </p>
-          <a href="../views/what's_on.html" id="bookTicketsButton"
-            >Book Tickets</a
-          >
+          <a href="../views/what's_on.html" id="bookTicketsButton">Book Tickets</a>
         </div>
         <div class="offerContainer">
-          <img
-            src="../images/FamilyOffer.jpg"
-            alt="Picture of a family in relation to the family offer"
-          />
+          <img src="../images/FamilyOffer.jpg" alt="Picture of a family in relation to the family offer" />
           <h2>Family Offer</h2>
           <p>
-            Calling all families! Dive into a world of cinematic wonder with our
-            Family Fun promotion at our cinema. Treat your loved ones to an
-            exciting movie experience during the weekdays! With our Family Fun
-            offer, available year-round, you can enjoy discounted tickets and
-            exclusive deals on snacks for the whole family. Bring the kids,
-            grandparents, and everyone in between for a day filled with
-            laughter, adventure, and cherished moments. Make memories that will
-            last a lifetime at our cinema. Join us for Family Fun and let the
+            Calling all families! Dive into a world of cinematic wonder with our Family Fun promotion at our cinema.
+            Treat your loved ones to an exciting movie experience during the weekdays! With our Family Fun offer,
+            available year-round, you can enjoy discounted tickets and exclusive deals on snacks for the whole family.
+            Bring the kids, grandparents, and everyone in between for a day filled with laughter, adventure, and
+            cherished moments. Make memories that will last a lifetime at our cinema. Join us for Family Fun and let the
             magic of movies bring your family closer together!
           </p>
-          <a href="../views/what's_on.html" id="bookTicketsButton"
-            >Book Tickets</a
-          >
+          <a href="../views/what's_on.html" id="bookTicketsButton">Book Tickets</a>
         </div>
       </div>
     </div>
