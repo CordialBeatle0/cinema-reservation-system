@@ -12,11 +12,11 @@ for (let seat of seats) {
 		console.log(seat, isClicked);
 		if (isClicked === "false") {
 			seat.setAttribute("isClicked", true);
-			seat.setAttribute("class", "seats selected");
+			seat.classList.add("selected");
 		}
 		if (isClicked === "true") {
 			seat.setAttribute("isClicked", false);
-			seat.setAttribute("class", "seats");
+			seat.classList.remove("selected");
 		}
 	});
 }

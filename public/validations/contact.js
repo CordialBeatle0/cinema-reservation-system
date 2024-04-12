@@ -3,7 +3,6 @@ const form = document.getElementById("form");
 const nameOfUser = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
-// const button = getElementById("submit");
 
 // Regular expression pattern for email validation
 const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
@@ -13,7 +12,7 @@ function appendError(parent, elementName) {
 	var errorElement = parent.querySelector("#errorMessage");
 	if (!errorElement) {
 		// If error message does not already exist
-		var errorMessage = document.createElement("span");
+		var errorMessage = document.createElement("p");
 		errorMessage.textContent = elementName + " can not be empty or the format is not correct.";
 		errorMessage.setAttribute("id", "errorMessage");
 		parent.appendChild(errorMessage);
@@ -26,10 +25,12 @@ function validation(element, elementName) {
 
 	if (element.value.trim() === "") {
 		appendError(parent, elementName);
+		element.setAttribute("class", "errorBox");
 	} else {
 		if (elementName == "Email") {
 			if (!emailPattern.test(email.value)) {
 				appendError(parent, elementName);
+				element.setAttribute("class", "errorBox");
 			} else {
 				var errorElement = parent.querySelector("#errorMessage");
 				if (errorElement) {

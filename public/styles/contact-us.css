@@ -1,13 +1,20 @@
+@font-face {
+	font-family: "Ghibli";
+	src: url(../fonts/Eyad\ Al-Samman\ -\ Ghibli.otf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+	font-family: "Ghibli";
 }
 body {
 	min-height: 100vh;
 	width: 100%;
-	background: #009579;
+	background-image: url(./../images/Background2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 #thankYouMessage {
 	margin-bottom: 20.8px;
@@ -39,7 +46,6 @@ textarea {
 	width: 100%;
 	padding: 0 15px;
 	font-size: 17px;
-	border: 1px solid #ddd;
 	border-radius: 6px;
 	outline: none;
 }
@@ -61,8 +67,9 @@ textarea:focus {
 	text-decoration: underline;
 }
 .form input.button {
+	border: none;
 	color: #fff;
-	background: #009579;
+	background: #33b0de;
 	font-size: 1.2rem;
 	font-weight: 500;
 	letter-spacing: 1px;
@@ -71,7 +78,7 @@ textarea:focus {
 	transition: 0.4s;
 }
 .form input.button:hover {
-	background: #006653;
+	background: #146fef;
 }
 #message {
 	height: 100px;
@@ -80,7 +87,15 @@ textarea:focus {
 	align-content: center;
 	resize: vertical;
 }
+.noError {
+	border: 1px solid #ddd;
+}
+.errorBox {
+	border: 1px solid #f91919;
+	background-color: #f9f0f1;
+}
 #errorMessage {
-	padding: 0 15px;
+	margin-top: 7px;
+	padding-left: 5px;
 	color: red;
 }
