@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <!----carousel cdn--->
+
+
     <script>
         $(function () {
             $("#header").load("header.html");
@@ -23,6 +22,19 @@
 
 <body>
     <div id="header"></div>
+    <!-- slide  show -->
+    <div id="slideshow">
+        <div class="slide"><img src="../images/Howlmovingcastlelandscape.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="../images/ponyolanscape.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="../images/RamadanOffer.jpg" alt="Slide 3"></div>
+        <!-- Previous and Next buttons -->
+        <button id="prev" class="button"><img src="../images/Arrowleft.png" alt="Arrowleft"
+                style="height: 50px;"></button>
+        <button id="next" class="button"><img src="../images/Arrowright.png" alt="Arrowleft"
+                style="height: 50px;"></button>
+    </div>
+
+
 
     <section>
         <h3 class="headers">What's On</h3>
@@ -129,11 +141,6 @@
                 </div>
             </div>
 
-
-
-
-
-
         </div>
 
     </section>
@@ -144,6 +151,7 @@
 
 
     <div id="footer"></div>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
