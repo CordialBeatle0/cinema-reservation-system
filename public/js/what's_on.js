@@ -1,4 +1,4 @@
-const myDiv = document.getElementById("myDiv");
+const myDiv = document.getElementById("activate");
 myDiv.addEventListener("mouseover", showTooltip);
 myDiv.addEventListener("mouseout", hideTooltip);
 
