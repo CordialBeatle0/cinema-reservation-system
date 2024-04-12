@@ -67,7 +67,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-#book {
+.book {
 	font-family: "Ghibli";
 	margin-top: 30px;
 	height: 50px;
@@ -79,7 +79,7 @@ body {
 	border-radius: 5%;
 	transition: color 0.3s, background 0.3s;
 }
-#book:hover {
+.book:hover {
 	color: white;
 	background: #146fef;
 }
