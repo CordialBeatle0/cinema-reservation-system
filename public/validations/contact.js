@@ -47,41 +47,8 @@ function errorCheck(event) {
     message.classList.replace("noError", "errorBox");
   }
 
-  // if (element.value.trim() === "") {
-  //   appendError(parent, elementName);
-  //   element.setAttribute("class", "errorBox");
-  // } else {
-  //   if (elementName == "Email") {
-  //     if (!emailPattern.test(email.value)) {
-  //       appendError(parent, elementName);
-  //       element.setAttribute("class", "errorBox");
-  //     } else {
-  //       var errorElement = parent.querySelector("#errorMessage");
-  //       if (errorElement) {
-  //         parent.removeChild(errorElement);
-  //       }
-  //     }
-  //   } else {
-  //     var errorElement = parent.querySelector("#errorMessage");
-  //     if (errorElement) {
-  //       parent.removeChild(errorElement);
-  //     }
-  //   }
-  // }
-
   form.submit();
 }
-
-// Adding event listeners
-// nameOfUser.addEventListener("input", function () {
-//   validation(nameOfUser, "Name");
-// });
-// email.addEventListener("input", function () {
-//   validation(email, "Email");
-// });
-// message.addEventListener("input", function () {
-//   validation(message, "Message Box");
-// });
 
 // Handling form submission event
 document.addEventListener("submit", errorCheck);
