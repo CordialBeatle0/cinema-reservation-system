@@ -1,3 +1,4 @@
+// Switching Between Tabs
 $(document).ready(function () {
   $(".tab").click(function () {
     var tabId = $(this).attr("data-tab");
@@ -6,6 +7,25 @@ $(document).ready(function () {
     $(".tab-content").addClass("hidden");
     $("#" + tabId).removeClass("hidden");
   });
+});
+
+// The Button Up
+var btn = $("#backToTop");
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate(
+    {
+      scrollTop: 0,
+    },
+    "300"
+  );
 });
 
 // for update personal info
