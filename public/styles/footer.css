@@ -17,6 +17,9 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 1140px;
+  margin: auto;
+  padding: 0;
 }
 
 .footer-section {
@@ -27,6 +30,9 @@
 .footer-section h3 {
   color: #aaa;
   font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -36,8 +42,15 @@
   margin: 0;
 }
 
+.footer-section p {
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
 .footer-section ul li {
   margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .footer-section ul li a {
@@ -52,5 +65,6 @@
 }
 
 .footer-bottom p {
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
