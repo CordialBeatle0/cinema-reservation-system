@@ -32,7 +32,6 @@ body {
   color: #013e48;
   font-weight: 500;
   padding: 20px 100px;
-  /* margin-left: 10%; */
   font-size: x-large;
   text-decoration: underline;
   text-underline-offset: 13px;
@@ -135,9 +134,9 @@ section .show button {
   font-size: 1em;
   border-radius: 50px;
   background: #33b0de;
+  box-shadow: inset 0 0 50px #146fef;
   color: #fff;
   cursor: pointer;
-  box-shadow: inset 0 0 50px #146fef;
 }
 
 section .show button:hover {
