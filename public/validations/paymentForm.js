@@ -62,6 +62,7 @@ function validatePrevious() {
   if (errorInputs.length === 0) {
     $(".confirm_details-btn").click(function () {
       $(".payment-form").slideDown();
+      $(".cancel-btn-1").remove();
     });
   }
 }
