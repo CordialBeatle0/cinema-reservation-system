@@ -215,18 +215,19 @@ section .show button:hover {
   width: 40%;
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   height: 40%;
-  justify-content: right;
+  justify-content: center;
   float: right;
   display: grid;
+  border: dashed 1px white;
+  border-radius: 5px;
 }
 
 #tickets .fa {
+  top: 5px;
   position: relative;
-  top: 12.5px;
-  right: 40px;
-  transform: scaleX(9) scaleY(4) rotateZ(45deg);
-  /* color: rgba(255, 213, 2, 0.826); */
   color: white;
 }
 
@@ -236,7 +237,7 @@ section .show button:hover {
   left: -50px;
   font-size: 15px;
   z-index: 2;
-  color: #0051c3;
+  color: white;
 }
 
 #genre-box {
