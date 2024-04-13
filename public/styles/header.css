@@ -102,3 +102,11 @@ header nav .fa {
 header nav .fa:hover {
   color: white;
 }
+
+.sign-in-up {
+  float: right;
+}
+
+.sign-in-up a {
+  margin: 10px;
+}
