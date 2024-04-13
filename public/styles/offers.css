@@ -26,22 +26,23 @@ body {
   text-decoration: underline;
   text-underline-offset: 13px;
   text-decoration-color: #013e48;
-  top: 25%;
-  left: 0;
+  align-self: flex-start;
 }
 
 .contentContainer {
   color: #013e48;
-  margin-top: 150px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 150px;
 }
 .contentContainer .offerContainer {
   display: flex;
   align-self: center;
   flex-direction: column;
-  max-width: 1000px;
 }
 .offerContainer img {
   display: block;
