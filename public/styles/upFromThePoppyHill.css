@@ -206,9 +206,23 @@ body {
   object-fit: fill;
 }
 
-button {
+#button-line {
   position: relative;
   top: 1000px;
+  height: fit-content;
+}
+
+#button-line hr {
+  position: relative;
+  top: 25px;
+  width: 80%;
+  margin-left: 5%;
+  border: solid 1px white;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#button-line button {
   float: right;
   margin-right: 5%;
   border: none;
@@ -221,10 +235,30 @@ button {
   color: #fff;
   cursor: pointer;
   box-shadow: inset 0 0 50px #146fef;
-  margin-bottom: 1050px;
 }
 
-button:hover {
+#button-line button:hover {
   background: #338bde;
   box-shadow: inset 0 0 50px #0069fbac;
+}
+
+section .show {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  /* background: #111; */
+  padding: 10px 100px;
+  padding-bottom: 40px;
+  top: 1000px;
+}
+
+section .show .show-bar {
+  background: #fff;
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+  overflow: hidden;
 }

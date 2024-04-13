@@ -1,107 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery Slideshow</title>
     <style>
-        #slideshow {
-            position: relative;
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            border: 1px solid #ccc;
-        }
+      #slideshow {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #ccc;
+      }
 
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-        }
+      .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
 
-        /* Style for buttons */
-        .button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(255, 255, 255, 0.5);
-            border: none;
-            padding: 0px;
-            cursor: pointer;
-        }
+      /* Style for buttons */
+      .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+      }
 
-        #prev {
-            left: 10px;
-        }
+      #prev {
+        left: 10px;
+      }
 
-        #next {
-            right: 10px;
-        }
+      #next {
+        right: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="slideshow">
-        <div class="slide"><img src="../images/Howlmovingcastlelandscape.jpg" alt="Slide 1"></div>
-        <div class="slide"><img src="../images/ponyolanscape.jpg" alt="Slide 2"></div>
-        <div class="slide"><img src="../images/RamadanOffer.jpg" alt="Slide 3"></div>
-        <!-- Previous and Next buttons -->
-        <button id="prev" class="button"><img src="../images/Arrowleft.png" alt="Arrowleft"
-                style="height: 50px;"></button>
-        <button id="next" class="button"><img src="../images/Arrowright.png" alt="Arrowleft"
-                style="height: 50px;"></button>
+      <div class="slide">
+        <img src="../images/Howlmovingcastlelandscape.jpg" alt="Slide 1" />
+      </div>
+      <div class="slide">
+        <img src="../images/ponyolanscape.jpg" alt="Slide 2" />
+      </div>
+      <div class="slide">
+        <img src="../images/RamadanOffer.jpg" alt="Slide 3" />
+      </div>
+      <!-- Previous and Next buttons -->
+      <button id="prev" class="button">
+        <img
+          src="../images/Arrowleft.png"
+          alt="Arrowleft"
+          style="height: 50px"
+        />
+      </button>
+      <button id="next" class="button">
+        <img
+          src="../images/Arrowright.png"
+          alt="Arrowleft"
+          style="height: 50px"
+        />
+      </button>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            var currentIndex = 0;
-            var slides = $('.slide');
-            var totalSlides = slides.length;
+      $(document).ready(function () {
+        var currentIndex = 0;
+        var slides = $(".slide");
+        var totalSlides = slides.length;
 
-            // Show the first slide
-            slides.eq(currentIndex).show();
+        // Show the first slide
+        slides.eq(currentIndex).show();
 
+        // Function to show next slide
+        function nextSlide() {
+          slides.eq(currentIndex).fadeOut(500);
+          currentIndex = (currentIndex + 1) % totalSlides;
+          slides.eq(currentIndex).fadeIn(500);
+        }
 
+        // Function to show previous slide
+        function prevSlide() {
+          slides.eq(currentIndex).fadeOut(500);
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          slides.eq(currentIndex).fadeIn(500);
+        }
 
-            // Function to show next slide
-            function nextSlide() {
-                slides.eq(currentIndex).fadeOut(500);
-                currentIndex = (currentIndex + 1) % totalSlides;
-                slides.eq(currentIndex).fadeIn(500);
-            }
+        // Show next slide on button click
+        $("#next").click(nextSlide);
 
-            // Function to show previous slide
-            function prevSlide() {
-                slides.eq(currentIndex).fadeOut(500);
-                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-                slides.eq(currentIndex).fadeIn(500);
-            }
+        // Show previous slide on button click
+        $("#prev").click(prevSlide);
 
-            // Show next slide on button click
-            $('#next').click(nextSlide);
+        // Automatic slideshow
+        var slideshowInterval = setInterval(nextSlide, 3000);
 
-            // Show previous slide on button click
-            $('#prev').click(prevSlide);
-
-            // Automatic slideshow
-            var slideshowInterval = setInterval(nextSlide, 3000);
-
-            // Pause slideshow on hover
-            $('#slideshow').hover(
-                function () { clearInterval(slideshowInterval); },
-                function () { slideshowInterval = setInterval(nextSlide, 3000); }
-            );
-        });
+        // Pause slideshow on hover
+        $("#slideshow").hover(
+          function () {
+            clearInterval(slideshowInterval);
+          },
+          function () {
+            slideshowInterval = setInterval(nextSlide, 3000);
+          }
+        );
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
