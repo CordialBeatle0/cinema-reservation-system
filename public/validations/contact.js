@@ -1,5 +1,5 @@
 // Retrieving form and input elements
-const form = document.getElementById("form");
+const form = document.querySelector("form");
 const nameOfUser = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
@@ -18,6 +18,7 @@ function appendError(parent, errorMessageContent) {
 // Function to check if there are any errors when submitting
 function errorCheck(event) {
   event.preventDefault();
+  var canSubmit = true;
 
   // Clearing previous error messages
   document
@@ -34,20 +35,26 @@ function errorCheck(event) {
   if (inputedName === "") {
     appendError(nameOfUser.parentElement, "Name can not be empty");
     nameOfUser.classList.replace("noError", "errorBox");
+    canSubmit = false;
   }
   if (inputedEmail === "") {
     appendError(email.parentElement, "Email can not be empty");
     email.classList.replace("noError", "errorBox");
+    canSubmit = false;
   } else if (!emailPattern.test(inputedEmail)) {
     appendError(email.parentElement, "Email is of wrong format");
     email.classList.replace("noError", "errorBox");
+    canSubmit = false;
   }
   if (inputedMessage === "") {
     appendError(message.parentElement, "Message can not be empty");
     message.classList.replace("noError", "errorBox");
+    canSubmit = false;
   }
 
-  form.submit();
+  if (canSubmit) {
+    form.submit();
+  }
 }
 
 // Handling form submission event
