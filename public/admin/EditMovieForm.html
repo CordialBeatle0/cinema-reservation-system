@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./../styles/AddMovieForm.css" />
-    <title>AddMovie</title>
+    <!-- same cc as add movie form -->
+    <link rel="stylesheet" href="./AddMovieForm.css" />
+    <title>EditMovie</title>
   </head>
 
   <body>
-    <form id="submit-form" action="./../views/AdminMovieDashboard.html">
-      <h2>Add Movie Details</h2>
+    <form id="submit-form" action="./AdminMovieDashboard.html">
+      <h2>Edit Movie Details</h2>
       <div class="form-group">
         <label for="poster">Movie Poster</label>
         <input type="file" id="poster" />
@@ -78,12 +79,12 @@
         <input type="submit" value="Confirm Movie Details" id="confirm-btn" />
       </div>
       <div class="form-group confirm_details-btn">
-        <a href="./../views/AdminMovieDashboard.html"
+        <a href="./AdminMovieDashboard.html"
           ><input type="button" value="Cancel" id="cancel-btn"
         /></a>
       </div>
     </form>
 
-    <script src="./../validations/AddMovieForm.js"></script>
+    <script src="../validations/EditMovieForm.js"></script>
   </body>
 </html>

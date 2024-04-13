@@ -38,3 +38,22 @@ $(".show-more").on("click", function () {
     $(".bar").css("width", "50%");
   }
 });
+
+// The Button Up
+var btn = $("#backToTop");
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate(
+    {
+      scrollTop: 0,
+    },
+    500
+  );
+});
