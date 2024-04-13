@@ -93,6 +93,7 @@ form small {
   background: #33b0de;
   box-shadow: inset 0 0 50px #146fef;
   transition: 0.2s ease;
+  margin-top: 20px;
 }
 
 .confirm_details-btn input:hover {
