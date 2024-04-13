@@ -31,7 +31,7 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 100px;
+  /* padding: 10px 100px; */
   position: fixed;
   top: 5px;
   left: 0;
@@ -50,6 +50,24 @@ header nav .logo {
   background-image: url(./../images/Studio_Ghiblinet_Logo-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  object-fit: fill;
+}
+
+#pazas-logo {
+  width: 100px;
+  height: 110px;
+  top: 0;
+  margin-left: 50px;
+  /* background-color: black; */
+  object-fit: fill;
+  /* background-image: url(./../images/Logo-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 100%; */
+}
+
+#pazas-logo img {
+  width: 140px;
+  height: 140px;
 }
 
 header nav .logo span {
