@@ -36,7 +36,9 @@ header nav {
   top: 5px;
   left: 0;
   z-index: 99;
-  width: 100%;
+  width: 85%;
+  margin-left: 7%;
+  margin-right: 10%;
 }
 
 header nav .logo {
@@ -144,34 +146,20 @@ header nav .fa:hover {
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); /* Add white box-shadow on hover */
 }
 
-/* Bagrbb el Dropdown menu */
-.navbar {
-  background-color: #333;
-  padding: 10px;
-}
-
-.navbar-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.nav-item {
-  margin-right: 10px;
-}
-
+/* Dropdown menu */
 .nav-link {
   color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
   display: block;
 }
 
 .dropdown-menu {
+  margin: 0;
+  left: 25px;
+  border-radius: 7px;
   display: none;
   position: absolute;
-  background-color: #333;
+  background: #013e48;
   padding: 5px 0;
   z-index: 1;
 }
