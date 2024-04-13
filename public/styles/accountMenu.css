@@ -14,6 +14,19 @@ body {
   width: 100%;
 }
 
+#headers {
+  color: #013e48;
+  font-weight: 500;
+  padding: 20px 100px;
+  font-size: x-large;
+  text-decoration: underline;
+  text-underline-offset: 13px;
+  text-decoration-color: #013e48;
+  top: 25%;
+  left: 0;
+  font-family: "Ghibli";
+}
+
 .tabs {
   display: flex;
   border-bottom: solid 2px white;
