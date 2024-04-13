@@ -8,16 +8,16 @@ $(document).ready(function () {
 
   // Function to show next slide
   function nextSlide() {
-    slides.eq(currentIndex).fadeOut(500);
+    slides.eq(currentIndex).hide();
     currentIndex = (currentIndex + 1) % totalSlides;
-    slides.eq(currentIndex).fadeIn(500);
+    slides.eq(currentIndex).show();
   }
 
   // Function to show previous slide
   function prevSlide() {
-    slides.eq(currentIndex).fadeOut(500);
+    slides.eq(currentIndex).hide();
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    slides.eq(currentIndex).fadeIn(500);
+    slides.eq(currentIndex).show();
   }
 
   // Show next slide on button click
@@ -27,7 +27,7 @@ $(document).ready(function () {
   $("#prev").click(prevSlide);
 
   // Automatic slideshow
-  var slideshowInterval = setInterval(nextSlide, 3000);
+  var slideshowInterval = setInterval(nextSlide, 5000);
 
   // Pause slideshow on hover
   $("#slideshow").hover(
@@ -35,7 +35,7 @@ $(document).ready(function () {
       clearInterval(slideshowInterval);
     },
     function () {
-      slideshowInterval = setInterval(nextSlide, 3000);
+      slideshowInterval = setInterval(nextSlide, 5000);
     }
   );
 
