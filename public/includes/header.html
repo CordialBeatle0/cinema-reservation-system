@@ -1,3 +1,28 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  // Optional JavaScript for dropdown functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    var dropdowns = document.querySelectorAll(".dropdown-toggle");
+    dropdowns.forEach(function (dropdown) {
+      dropdown.addEventListener("click", function (e) {
+        e.preventDefault();
+        this.parentNode
+          .querySelector(".dropdown-menu")
+          .classList.toggle("show");
+      });
+    });
+
+    window.addEventListener("click", function (e) {
+      dropdowns.forEach(function (dropdown) {
+        if (!dropdown.contains(e.target)) {
+          dropdown.parentNode
+            .querySelector(".dropdown-menu")
+            .classList.remove("show");
+        }
+      });
+    });
+  });
+</script>
 <header>
   <nav>
     <p class="logo"></p>
@@ -6,7 +31,14 @@
 
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/views/what's_on.html">Movies</a></li>
+      <!-- <li><a href="/views/what's_on.html">Movies</a></li> -->
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle">Movies</a>
+        <ul class="dropdown-menu">
+          <li><a href="/views/what's_on.html">What's On</a></li>
+          <li><a href="/views/comingSoon.html">Coming Soon</a></li>
+        </ul>
+      </li>
       <li><a href="/views/offers.html">Offers</a></li>
       <li><a href="/views/contact-us.html">Contact Us</a></li>
     </ul>
