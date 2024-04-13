@@ -31,12 +31,12 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 10px 100px; */
+  padding: 10px 100px;
   position: fixed;
   top: 5px;
   left: 0;
   z-index: 99;
-  width: 80%;
+  width: 85%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -55,14 +55,12 @@ header nav .logo {
 
 #pazas-logo {
   width: 100px;
-  height: 110px;
+  height: 75px;
   top: 0;
   margin-left: 50px;
-  /* background-color: black; */
   object-fit: fill;
-  /* background-image: url(./../images/Logo-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: 100%; */
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 #pazas-logo img {
@@ -96,6 +94,9 @@ header nav ul {
   position: relative;
   margin-left: 10%;
   margin-right: 10%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 header nav ul li {
