@@ -1,7 +1,6 @@
 {
   "name": "cinemareservationsystem",
   "version": "1.0.0",
-  "type": "module",
   "description": "This project is a Cinema Reservation System built to help users reserve seats for their favorite movies in a convenient and efficient manner.",
   "main": "server.js",
   "scripts": {

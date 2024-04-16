@@ -1,9 +1,9 @@
-import express, { static as expressStatic } from "express";
+const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from the "public" directory
-app.use(expressStatic("public"));
+app.use(express.static("public"));
 
 // Define API routes
 app.get("/api/data", (req, res) => {
